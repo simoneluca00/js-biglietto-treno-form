@@ -2,7 +2,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
+nav,
+.sz_btn_danger {
     background-color: #a6160a;
 }
 
@@ -12,14 +13,66 @@ nav {
     text-decoration: underline;
 }
 
-/* CORPO DEL MAIN */
+/* -------------------------------------
+            CORPO DEL MAIN
+------------------------------------- */
 .sz_background {
-    height: calc(100vh - 147px);
+    height: 100vh;
     background-image: url('./../img/napoli.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* INPUT CHE L'UTENTE DEVE COMPILARE */
 .calculator_price {
     background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 10%;
 }
+
+.sz_cont_input {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sz-i-text,
+.sz-i-number,
+.sz-i-select {
+    height: 60px;
+    width: 250px;
+}
+
+select#age-range {
+    height: 30px;
+}
+
+/* BUTTONS */
+.sz_btn_danger {
+    border-color: rgb(166, 22, 10);
+    color: #fff;
+}
+
+.sz_btn_danger:focus {
+    box-shadow: 0 0 0 0.15rem rgb(231, 101, 90);
+    color: rgb(112, 128, 144);
+}
+
+/* SEZIONE CHE CONTIENE LE INFO DEL PREZZO CALCOLATO */
+.sz_info_price {
+    /* background-color: rgba(112, 161, 235, 0.6); */
+    background-color: rgba(190, 77, 67, 0.4);
+}
+
+.sz_info_price > div {
+    width: calc(100% / 5);
+}
+
+.sz_info_price h6 {
+    background-color: #fff;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.border-end {
+    border-right: 2px dashed #000 !important;
+}
+

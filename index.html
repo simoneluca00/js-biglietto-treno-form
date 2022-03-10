@@ -81,7 +81,63 @@
         <div class="container-fluid sz_background">
             <div class="row">
                 <div class="calculator_price">
-                    <h1 class="py-2 text-white text-center">Calcola qui il prezzo del tuo biglietto in poche e semplici mosse:</h1>
+                    <h1 class="py-2 text-white text-center text-uppercase">Calcola il prezzo del tuo biglietto in poche e semplici mosse:</h1>
+                    <div class="sz_cont_input d-flex justify-content-center py-4">
+                        <div class="sz_inputs col-auto col-md-12">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+                                <div class="sz-i-text d-flex flex-column text-center my-3">
+                                    <label class="fs-5 fw-bold">Nome e Cognome</label>
+                                    <input type="text" id="sz_input_name" placeholder="es. Mario Rossi" value="Mario Rossi" required>
+                                </div>
+                                <div class="sz-i-number d-flex flex-column text-center my-3">
+                                    <label class="fs-5 fw-bold">KM da percorrere</label>
+                                    <input type="number" id="sz_input_km" name="sz_input_km" min="1" step="any" value="239" required>
+                                </div>
+                                <div class="sz-i-select d-flex flex-column text-center my-3">
+                                    <label class="fs-5 fw-bold">Fascia d'età</label>
+                                    <select name="age-range" id="age-range">
+                                        <option value="Minorenne">Minorenne</option>
+                                        <option value="Standard">Standard</option>
+                                        <option value="Over65">Over 65</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            
+                            <div class="d-flex justify-content-center my-5">
+                                <button type="button" id="sz_btn_run" class="btn sz_btn_danger px-md-5 py-md-3 mx-4">Esegui</button>
+                                <button type="button" id="sz_btn_cancel" class="btn sz_btn_danger px-md-5 py-md-3 mx-4">Annulla</button>
+                            </div>
+
+                            <div id="sz_ticket" class="mt-5 d-none">
+                                <h2 class="text-center text-uppercase p-2">Il tuo biglietto</h2>
+                                <div>
+                                    <div class="sz_info_price d-flex justify-content-between w-75 p-3 m-auto">
+                                        <div class="flex-column">
+                                            <h5 class="fw-bold text-center">Nome passeggero</h5>
+                                            <h6 id="sz_name_pass" class="border-end pt-5"></h6>
+                                        </div>
+                                        <div class="flex-column">
+                                            <h5 class="fw-bold text-center">Offerta</h5>
+                                            <h6 id="sz_discount_pass" class="border-end pt-5"></h6>
+                                        </div>
+                                        <div class="flex-column">
+                                            <h5 class="fw-bold text-center">Carrozza</h5>
+                                            <h6 id="sz_carriage_pass" class="border-end pt-5"></h6>
+                                        </div>
+                                        <div class="flex-column">
+                                            <h5 class="fw-bold text-center">Codice CP</h5>
+                                            <h6 id="sz_pin_pass" class="border-end pt-5"></h6>
+                                        </div>
+                                        <div class="flex-column">
+                                            <h5 class="fw-bold text-center">Costo biglietto</h5>
+                                            <h6 id="sz_price_pass" class="pt-5"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
