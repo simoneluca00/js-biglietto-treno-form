@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <title>Il tuo biglietto (form)</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./asset/img/logo-italo.svg" alt="logo-Italo" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-end pe-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item mx-3">
+                <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Offerte
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Sconto Under18</a></li>
+                  <li><a class="dropdown-item" href="#">Sconto Over65</a></li>
+                  <li><a class="dropdown-item" href="#">Milano-Roma fino al -60%</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destinazioni
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Le più gettonate</a></li>
+                  <li><a class="dropdown-item" href="#">Nuove tratte</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Italo GO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Prenota il tuo hotel</a></li>
+                  <li><a class="dropdown-item" href="#">Noleggia auto</a></li>
+                  <li><a class="dropdown-item" href="#">Assicurazione viaggio</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="sz_banner bg-dark p-2 text-center text-white">
+            <span class="fw-bold m-0 me-2">Settimana degli sconti su tutti i biglietti:</span>
+            <span class="sz_discount">
+                -40% per gli over 65 &ensp;e&nbsp; -20% per gli under 18!
+            </span>
+        </div>
+
+        <div class="container-fluid sz_background">
+            <div class="row">
+                <div class="calculator_price">
+                    <h1 class="py-2 text-white text-center">Calcola qui il prezzo del tuo biglietto in poche e semplici mosse:</h1>
+                </div>
+            </div>
+        </div>
+      </main>
+    
+    <!-- BOOTSRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- MAIN.JS  -->
+    <script type="text/javascript" src="./asset/js/main.js"></script>
+</body>
+</html>
