@@ -50,8 +50,8 @@
                   Destinazioni
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Le più gettonate</a></li>
                   <li><a class="dropdown-item" href="#">Nuove tratte</a></li>
+                  <li><a class="dropdown-item" href="#">Le più gettonate</a></li>
                 </ul>
               </li>
 
@@ -60,9 +60,9 @@
                   Italo GO
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Prenota il tuo hotel</a></li>
-                  <li><a class="dropdown-item" href="#">Noleggia auto</a></li>
                   <li><a class="dropdown-item" href="#">Assicurazione viaggio</a></li>
+                  <li><a class="dropdown-item" href="#">Prenota hotel</a></li>
+                  <li><a class="dropdown-item" href="#">Noleggia auto</a></li>
                 </ul>
               </li>
             </ul>
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="sz-i-number d-flex flex-column text-center my-3">
                                     <label class="fs-5 fw-bold">KM da percorrere</label>
-                                    <input type="number" id="sz_input_km" name="sz_input_km" min="1" step="any" value="239" required>
+                                    <input type="number" name="sz_input_km" id="sz_input_km" min="1" value="">
                                 </div>
                                 <div class="sz-i-select d-flex flex-column text-center my-3">
                                     <label class="fs-5 fw-bold">Fascia d'età</label>
@@ -111,9 +111,9 @@
                             <div id="sz_ticket" class="mt-5 d-none">
                                 <h2 class="text-center text-uppercase p-2">Il tuo biglietto</h2>
                                 <div>
-                                    <div class="sz_info_price d-flex justify-content-between w-75 p-3 m-auto">
+                                    <div class="sz_info_price d-flex w-75 p-3 m-auto">
                                         <div class="flex-column">
-                                            <h5 class="fw-bold text-center">Nome passeggero</h5>
+                                            <h5 class="fw-bold text-center text-nowrap">Nome passeggero</h5>
                                             <h6 id="sz_name_pass" class="border-end pt-5"></h6>
                                         </div>
                                         <div class="flex-column">
@@ -129,7 +129,7 @@
                                             <h6 id="sz_pin_pass" class="border-end pt-5"></h6>
                                         </div>
                                         <div class="flex-column">
-                                            <h5 class="fw-bold text-center">Costo biglietto</h5>
+                                            <h5 class="fw-bold text-center text-nowrap">Costo biglietto</h5>
                                             <h6 id="sz_price_pass" class="pt-5"></h6>
                                         </div>
                                     </div>

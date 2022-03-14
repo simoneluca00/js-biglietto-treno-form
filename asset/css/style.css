@@ -26,7 +26,11 @@ nav,
 /* INPUT CHE L'UTENTE DEVE COMPILARE */
 .calculator_price {
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: 10%;
+    margin-top: 7%;
+}
+
+.calculator_price h1 {
+    font-size: 2.4em;
 }
 
 .sz_cont_input {
@@ -57,7 +61,6 @@ select#age-range {
 
 /* SEZIONE CHE CONTIENE LE INFO DEL PREZZO CALCOLATO */
 .sz_info_price {
-    /* background-color: rgba(112, 161, 235, 0.6); */
     background-color: rgba(190, 77, 67, 0.4);
 }
 
