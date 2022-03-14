@@ -17,10 +17,18 @@ nav,
             CORPO DEL MAIN
 ------------------------------------- */
 .sz_background {
-    height: 100vh;
     background-image: url('./../img/napoli.jpg');
+}
+
+.sz_background,
+.sz_background_2 {
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+}
+
+.sz_background_2 {
+    background-image: url('./../img/roma.jpg');
 }
 
 /* INPUT CHE L'UTENTE DEVE COMPILARE */
@@ -60,22 +68,33 @@ select#age-range {
 }
 
 /* SEZIONE CHE CONTIENE LE INFO DEL PREZZO CALCOLATO */
-.sz_info_price {
-    background-color: rgba(190, 77, 67, 0.4);
+.sz_ticket {
+    margin-top: 100px;
 }
 
-.sz_info_price > div {
-    width: calc(100% / 5);
+.sz_info_price {
+    background-color: rgba(190, 77, 67, 0.4);
 }
 
 .sz_info_price h6 {
     background-color: #fff;
     text-align: center;
-    height: 100px;
+    height: 80px;
     vertical-align: middle;
 }
 
 .border-end {
     border-right: 2px dashed #000 !important;
+}
+
+/* MEDIA QUERY PER TABLET (accorgimenti alle modifiche di Bootstrap) */
+@media screen and (min-width: 767px) {
+    .sz_info_price {
+        width: 85%;
+    }
+
+    .sz_info_price > div {
+    width: calc(100% / 5);
+}
 }
 
